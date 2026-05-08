@@ -10,15 +10,6 @@ public class Person {
     private final LocalDate birthDate;
     private final String registrationAddress;
 
-    @Override
-    public String toString() {
-        return "\n Driver license number:" + driverLicenseNumber +
-                "\n Last name:" + lastName +
-                "\n First name:" + firstName +
-                "\n Middle name:" + middleName +
-                "\n Birth date:" + birthDate +
-                "\n Registration address:" + registrationAddress + '\n';}
-
     public Person (String driverLicenseNumber,String lastName,String firstName,
                    String middleName,LocalDate birthDate,String registrationAddress){
         this.driverLicenseNumber = driverLicenseNumber;
@@ -47,4 +38,13 @@ public class Person {
     public String getRegistrationAddress() {
         return registrationAddress;
     }
+
+    @Override
+    public String toString() {
+        return "\n Driver license number:" + driverLicenseNumber +
+                "\n Last name:" + lastName +
+                "\n First name:" + firstName +
+                "\n Middle name:" + middleName +
+                "\n Birth date:" + birthDate +
+                "\n Registration address:" + registrationAddress + '\n';}
 }
